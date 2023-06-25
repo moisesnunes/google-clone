@@ -4,6 +4,6 @@ Esse é um projeto [Next.js](https://nextjs.org/) feito com o [`create-next-app`
 
 Você pode ver o resultado final do projeto com o link [Google-Clone]
 
-![](/public/home.png)
+![](/public/front-page.png)
 
 ---

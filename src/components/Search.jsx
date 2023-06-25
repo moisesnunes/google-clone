@@ -52,7 +52,7 @@ function Search() {
           {loading ? (
             <img src="/loading.svg" alt="loading" className="h-8 text-center" />
           ) : (
-            "Estou com sorte aaaaa"
+            "Estou com sorte"
           )}
         </button>
       </div>
