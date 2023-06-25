@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .btn {
+    @apply bg-[#303134] rounded-md text-sm text-white hover:ring-1 hover:ring-gray-400 focus:outline-none
+    active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow;
+  }
+}
