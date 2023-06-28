@@ -28,13 +28,13 @@ function Search() {
       <form
         onSubmit={handleSubmit}
         action=""
-        className="flex w-full mt-8 mx-auto max-w-[90%] px-5 py-3 rounded-full bg-[#303134] 
-        hover:ring-1 hover:ring-gray-400 transition-shadow focus:outline-none sm:max-w-xl lg:max-w-2xl"
+        className="flex w-full mt-8 mx-auto max-w-[90%] px-5 py-3 rounded-full bg-[#171717] 
+        hover:ring-1 hover:ring-gray-400 transition-shadow focus:outline-none lg:max-w-4xl sm:max-w-sm"
       >
         <AiOutlineSearch className="text-xl text-white mr-3" />
         <input
           type="text"
-          className="flex-grow focus:outline-none bg-[#303134]"
+          className="flex-grow focus:outline-none bg-[#171717]"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
