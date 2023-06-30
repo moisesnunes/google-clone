@@ -29,7 +29,7 @@ function Search() {
         onSubmit={handleSubmit}
         action=""
         className="flex w-full mt-8 mx-auto max-w-[90%] px-5 py-3 rounded-full bg-[#171717] 
-        hover:ring-1 hover:ring-gray-400 transition-shadow focus:outline-none lg:max-w-4xl sm:max-w-sm"
+        hover:ring-1 hover:ring-gray-400 transition-shadow focus:outline-none lg:max-w-2xl sm:max-w-sm"
       >
         <AiOutlineSearch className="text-xl text-white mr-3" />
         <input
