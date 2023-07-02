@@ -1,7 +1,7 @@
-import Footer from "@/components/Footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +16,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="google.svg" />
       </Head>
       <body className={inter.className}>
-        {children}
-        <Footer />
+        {children} <Footer />{" "}
       </body>
     </html>
   );
