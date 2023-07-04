@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="google.svg" />
       </Head>
-      <body className={inter.className}>
+      <body className="relative min-h-screen">
         {children} <Footer />{" "}
       </body>
     </html>

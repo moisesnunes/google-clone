@@ -24,6 +24,7 @@ function SearchBox() {
     <form
       className="flex bg-[#303134] shadow-xl hover:shadow-[#1e1d1d] transition-200 rounded-full px-6 py-3 ml-10 mr-5 flex-grow items-center space-x-4 max-w-3xl"
       onSubmit={handleSubmit}
+      placeholder="Digite aqui..."
     >
       <input
         type="text"
