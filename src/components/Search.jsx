@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -50,7 +51,7 @@ function HomeSearch() {
           disabled={loading}
         >
           {loading ? (
-            <img src="/loading.svg" alt="loading" className="h-8 text-center" />
+            <Image src="/loading.svg" alt="loading" className="h-8 text-center" width={100} height={100} />
           ) : (
             "Estou com sorte"
           )}

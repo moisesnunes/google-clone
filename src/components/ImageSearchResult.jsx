@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Pagination from "./Pagination";
+import Image from "next/image";
 
 export default function ImageSearchResult({ results }) {
   return (
@@ -9,7 +10,7 @@ export default function ImageSearchResult({ results }) {
           <div key={result.link} className="">
             <div className="group">
               <Link href={result.image.contextLink}>
-                <img className="w-full object-contain rounded-xl" src={result.link} alt={result.title} />
+                <Image className="w-full object-contain rounded-xl" src={result.link} alt={result.title} width={100} height={100}/>
               </Link>
               <Link href={result.image.contextLink}>
                 <h2 className="group-hover:underline truncate text-xl text-blue-400">{result.title}</h2>

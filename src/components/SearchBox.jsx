@@ -30,7 +30,6 @@ function SearchBox() {
         type="text"
         value={term}
         onChange={(e) => setTerm(e.target.value)}
-        value={term}
         className="w-full focus:outline-none bg-[#303134]"
       />
       <RxCross2
