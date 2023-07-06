@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HTMLReactParser from "html-react-parser";
+import Pagination from "./Pagination";
 
 export default function SearchWebResults({ results }) {
   return (
@@ -26,6 +27,7 @@ export default function SearchWebResults({ results }) {
           </p>
         </div>
       ))}
+      <Pagination />
     </div>
   );
 }

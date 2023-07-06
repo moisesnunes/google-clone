@@ -2,10 +2,10 @@ import Link from "next/link";
 import ImageSearchResult from "../../../components/ImageSearchResult";
 
 export default async function ImagePage({ searchParams }) {
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+  const startIndex = searchParams.start || "1";
   const response = await fetch(`
   https://www.googleapis.com/customsearch/v1?key=
-  ${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image
+  ${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}
   `);
   if (!response.ok) {
     throw new Error("Algo deu errado");
